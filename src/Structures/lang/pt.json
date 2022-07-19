@@ -1,0 +1,46 @@
+{
+    "has": "pt",
+    "quiz": {
+        "flag": {
+            "select": "Selecione o país",
+            "pergunta": "De qual país é essa bandeira ? \n\nContinente: {continente}",
+            "perdeu":  "Não foi dessa vez! O país era:"
+
+        },
+        "continent": {
+            "select": "Selecione o continente",
+            "pergunta": "De qual continente é esse país? \n\nPaís: {pais}",
+            "perdeu": "Não foi dessa vez! O continente era:",
+            "ponto": "Sua pontuação nesse jogo:"
+        }
+        
+        },
+        "guessnumber": {
+            "conseguiu": "Parabéns! Você acertou! O número que eu estava pensando era o:"
+    },
+    "backup": {
+        "perm": "Você precisa da permissão de `ADMINISTRADOR` para usar esse comando.",
+        "taativado": "O sistema de backup de usuários do servidor foi **ativado** com sucesso.",
+        "jataativado": "O sistema de backup de usuários do servidor **já está ativado**.",
+        "tadesativado": "O sistema de backup de usuários do servidor foi **desativado** com sucesso.",
+        "jatadesativado": "O sistema de backup de usuários do servidor **já está desativado**"
+    },
+    "botinfo": {
+        "description": "Olá {user}, eu sou a **{eu}**, uma bot Brasileira para o seu servidor. Estou alegrando **{total_servers} servidores** com mais de **{cmds} comandos** para você se divertir!\n\n - Eu fui criada em <:way_js:904741047668723722> [JavaScript](https://nodejs.org/en/) utilizando <:way_djs:904740985895018537> [Discord.js](https://discord.js.org/)",
+        "title": "Minhas informações!",
+        "maquina": "Informações da Máquina",
+        "processador": "Processador",
+        "meadd": "Me Adicione",
+        "toadd": "para me adicionar",
+        "cliqueaqui": "Clique [aqui]",
+        "vote": "Vote em mim",
+        "tovote": "para votar",
+        "servidor": "Meu servidor de Suporte",
+        "log": "para entrar no meu servidor de suporte",
+        "agradecimento": "Agradeço ao **`{andre}`** por ter me desenvolvido.\n- Agradeço a todas as **{pessoas} pessoas** que utilizaram minhas funções\n- Agradeço a todos os **Administradores e donos** dos meus **{total_servers} servidores** por me adicionarem\n- E agradeço a você **{user}**, por estar usando meus comandos :heart:",
+        "agradeco": "Agradecimentos:"
+    },
+    "idioma": {
+        "error": "Você não pode trocar o idioma do bot. O meu sistema de idioma está vinculado ao idioma do seu Discord. Caso queira mudar o idioma do bot, mude o idioma do seu aplicativo."
+    }
+}

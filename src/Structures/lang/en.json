@@ -1,0 +1,47 @@
+{
+    "has": "en",
+    "quiz": {
+        "flag": {
+            "select": "Select country",
+            "pergunta": "What country is this flag from? \n\nContinent: {continente}",
+            "perdeu":  "You got it wrong. The country was: "
+
+        },
+        "continent": {
+            "select": "Select the continent",
+            "pergunta": "What continent is this country from? \n\nCountry: {pais}",
+            "perdeu": "You got it wrong. The continent was:",
+            "ponto": "Your score in this game:"
+        }
+    },
+        "guessnumber": {
+            "conseguiu": "Congratulations! You got it right! I was thinking of the number:"
+        },
+        "backup": {
+            "perm": "You need `ADMINISTRATOR` permission to use this command.",
+            "taativado": "The server's user backup system has been **activated** successfully.",
+            "jataativado": "The server's user backup system **is already activated**.",
+            "tadesativado":"The server's user backup system was **successfully deactivated**.",
+            "jatadesativado": "The server's user backup system **is already disabled**."
+
+        },
+        "botinfo": {
+            "description": "Hello {user}, I am **{eu}**, a Brazilian bot for your server. I am cheering **{total_servers} servers** with more than **{cmds} commands** for you to have fun with! I was created in <:way_js:904741047668723722> [JavaScript](https://nodejs.org/en/) using <:way_djs:904740985895018537> [Discord.js](https://discord.js.org/)",
+            "title": "My information!",
+            "maquina": "Machine Information",
+            "processador": "Processor",
+            "meadd": "Add Me",
+            "toadd": "to add me",
+            "cliqueaqui": "Click [here]",
+            "vote" : "Vote me",
+            "tovote": "to vote",
+            "servidor": "My Support Server",
+            "log": "to log into my support server",
+            "agradecimento" : "I thank **`{andre}`** for developing me.\n- I thank all the **{pessoas} people** who have used my functions.\n- I thank all the **Administrators and owners** of my **{total_servers} servers** for adding me.\n- And I thank you **{user}**, for using my commands :heart:",
+            "agradeco": "Acknowledgments"
+        },
+        "idioma": {
+            "error": "You cannot change the language of the bot. My language system is tied to the language of your Discord. If you want to change the language of the bot, change the language of your application."
+        }
+    
+}
