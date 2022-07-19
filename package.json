@@ -1,30 +1,19 @@
 {
-  "dependencies": {
-    "colors": "^1.4.0",
-    "discord.js": "14.0.1",
-    "discord.js-light": "^4.8.1",
-    "dnpm-bin": "^0.0.1",
-    "fs": "^0.0.1-security",
-    "mongoose": "^6.3.3",
-    "pidusage": "^3.0.0",
-    "winston": "^3.8.1"
-  },
-  "name": "delyx",
+  "name": "shirydiscordbot",
   "version": "1.0.0",
+  "description": "Olá, eu sou a Shiry. Sou uma bot com funções para você e para o seu servidor.",
   "main": "src/index.js",
   "scripts": {
     "start": "node  --gc_interval=1 --expose_gc ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eiandremoreira/Delyx.git"
+    "url": "git+https://github.com/eiandremoreira/ShiryDiscordBot.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "eiandremoreira",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/eiandremoreira/Delyx/issues"
+    "url": "https://github.com/eiandremoreira/ShiryDiscordBot/issues"
   },
-  "homepage": "https://github.com/eiandremoreira/Delyx#readme",
-  "description": ""
+  "homepage": "https://github.com/eiandremoreira/ShiryDiscordBot#readme"
 }

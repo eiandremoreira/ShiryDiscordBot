@@ -1,0 +1,5 @@
+{
+    "discord.lowerDetailsEditing": "Workspace: {workspace}",
+    "discord.enabled": true,
+    "discord.removeRemoteRepository": false
+}
