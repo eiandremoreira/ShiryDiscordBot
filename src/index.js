@@ -49,7 +49,7 @@ mongo(config.database.url);
 client.logger = logger;
 
 if(__dirname.includes('eiandremoreira')) {
-	client.login(client.bot.token.canary);
+	client.login(config.bot.token.canary);
 }
 else {
 	client.login(config.bot.token.main);

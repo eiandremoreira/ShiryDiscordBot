@@ -4,7 +4,7 @@
   "description": "Olá, eu sou a Shiry. Sou uma bot com funções para você e para o seu servidor.",
   "main": "src/index.js",
   "scripts": {
-    "start": "node  --gc_interval=1 --expose_gc ."
+    "start": "yarn && node  --gc_interval=1 --expose_gc ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/eiandremoreira/ShiryDiscordBot/issues"
   },
-  "homepage": "https://github.com/eiandremoreira/ShiryDiscordBot#readme"
+  "homepage": "https://github.com/eiandremoreira/ShiryDiscordBot#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js": "^14.1.0-dev.1658103004-dda2895",
+    "mongoose": "^6.4.5",
+    "pidusage": "^3.0.0",
+    "winston": "^3.8.1"
+  }
 }
