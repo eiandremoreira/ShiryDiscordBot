@@ -8,10 +8,10 @@ module.exports = class Command {
 			},
 			pt: {
 				nome: 'ping',
-				categoria: 'ℹ️ » Informações',
+				categoria: 'Informations',
 				desc: 'Veja os 10 usuários com mais experiencia no bot'
 			},
-			aliases: ['latency'],
+			aliases: [],
 			run: this.run
 		};
 	}

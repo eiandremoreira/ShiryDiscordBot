@@ -11,13 +11,13 @@ module.exports = (client) => {
 			? interaction.options._hoistedOptions.map((i) => {
 				switch (i.type) {
 					case 8:
-						return `<@&${i.value}>`;
+						return i.value;
 						break;
 					case 6:
-						return `<@!${i.value}>`;
+						return i.value;
 						break;
 					case 7:
-						return `<#${i.value}>`;
+						return i.value;
 						break;
 					default:
 						return i.value;
