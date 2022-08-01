@@ -18,7 +18,7 @@ module.exports = class Command {
 			en: {
 				nome: 'botinfo',
 				categoria: 'Information',
-				desc: 'a'
+				desc: 'See all info about bot'
 			},
 			aliases: [],
 			run: this.run
