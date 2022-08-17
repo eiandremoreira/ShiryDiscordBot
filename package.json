@@ -18,7 +18,7 @@
   "homepage": "https://github.com/eiandremoreira/ShiryDiscordBot#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "discord.js": "^14.1.2",
+    "discord.js": "^14.2.0",
     "mongoose": "^6.5.0",
     "pidusage": "^3.0.0",
     "winston": "^3.8.1"
