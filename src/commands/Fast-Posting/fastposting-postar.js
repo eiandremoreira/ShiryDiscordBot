@@ -27,6 +27,7 @@ module.exports = class Command {
 
 		profile.findOne({ user: interaction.user.id }, async (err, data) => {
 
+
 			if(!data) {
 				new fast({
 					user: interaction.user.id,
@@ -41,7 +42,8 @@ module.exports = class Command {
 		new fast({
 			user: interaction.user.id,
 			post: args.join(''),
-			curtidas: 0
+			curtidas: 0,
+			data: new Date()
 		}).save();
 
 

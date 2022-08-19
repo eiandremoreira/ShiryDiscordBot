@@ -48,7 +48,7 @@ mongo(config.database.url);
 
 client.logger = logger;
 
-if(__dirname.includes('eiandremoreira')) {
+if(__dirname.includes('C:')) {
 	client.login(config.bot.token.canary);
 }
 else {

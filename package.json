@@ -19,6 +19,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "discord.js": "^14.1.0-dev.1658103004-dda2895",
+    "eslint": "^8.22.0",
     "mongoose": "^6.4.6",
     "node-fetch": "^2.6.4",
     "pidusage": "^3.0.0",
