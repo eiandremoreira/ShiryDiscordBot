@@ -33,7 +33,8 @@ module.exports = class Command {
 					user: interaction.user.id,
 					curtidas: 0,
 					seguidores: [],
-					seguindo: []
+					seguindo: [],
+					posted: true
 				}).save();
 			}
 		});

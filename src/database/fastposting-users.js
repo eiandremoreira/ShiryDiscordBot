@@ -4,7 +4,8 @@ const logSchema = new mongoose.Schema({
 	user: String,
 	curtidas: Number,
 	seguidores: Array,
-	seguindo: Array
+	seguindo: Array,
+	posted: Boolean
 });
 
 module.exports = mongoose.model('fastprofile', logSchema);

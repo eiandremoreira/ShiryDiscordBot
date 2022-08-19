@@ -50,7 +50,8 @@ module.exports = class Command {
 					user: interaction.user.id,
 					curtidas: 0,
 					seguidores: [],
-					seguindo: [user.id]
+					seguindo: [user.id],
+					posted: false
 				}).save();
 			}
 			else {
@@ -66,7 +67,8 @@ module.exports = class Command {
 					user: user.id,
 					curtidas: 0,
 					seguidores: [interaction.user.id],
-					seguindo: []
+					seguindo: [],
+					posted: false
 				}).save();
 			}
 			else {

@@ -6,40 +6,42 @@
 module.exports = (client) => {
 
 	client.on('interactionCreate', async interaction => {
-		if (!interaction.type === 2) return;
-		const args = interaction.options._hoistedOptions
-			? interaction.options._hoistedOptions.map((i) => {
-				switch (i.type) {
-					case 8:
-						return i.value;
-						break;
-					case 6:
-						return i.value;
-						break;
-					case 7:
-						return i.value;
-						break;
-					default:
-						return i.value;
-						break;
-				}
-			})
-			: [];
+		if (!interaction.type == 2) return;
+		try {
+			const args = interaction.options._hoistedOptions
+				? interaction.options._hoistedOptions.map((i) => {
+					switch (i.type) {
+						case 8:
+							return i.value;
+							break;
+						case 6:
+							return i.value;
+							break;
+						case 7:
+							return i.value;
+							break;
+						default:
+							return i.value;
+							break;
+					}
+				})
+				: [];
 
-		// Conteúdo "falso" da mensagem, vai juntar os valores das opções em uma única string.
-		interaction.content = (interaction.commandName + ' ' + args.join(' ')).trim();
 
-		if(interaction.options._group) {
-			interaction.commandName = interaction.commandName + '-' + interaction.options._group + '-' + interaction.options._subcommand;
-		}
-		else if(interaction.options._subcommand) {
-			interaction.commandName = interaction.commandName + '-' + interaction.options._subcommand;
-		}
+			// Conteúdo "falso" da mensagem, vai juntar os valores das opções em uma única string.
+			interaction.content = (interaction.commandName + ' ' + args.join(' ')).trim();
 
-		const command = client.commands.get(interaction.commandName) || client.commands.find(cmd => cmd.aliases.includes(interaction.commandName));
-		//	const color = '#f283cc';
-		if(!command) return;
-		/*
+			if(interaction.options._group) {
+				interaction.commandName = interaction.commandName + '-' + interaction.options._group + '-' + interaction.options._subcommand;
+			}
+			else if(interaction.options._subcommand) {
+				interaction.commandName = interaction.commandName + '-' + interaction.options._subcommand;
+			}
+
+			const command = client.commands.get(interaction.commandName) || client.commands.find(cmd => cmd.aliases.includes(interaction.commandName));
+			//	const color = '#f283cc';
+			if(!command) return;
+			/*
 		lang.findOne({ user: interaction.user.id }, async (err, data) => {
 
 			const row = new ActionRowBuilder();
@@ -69,19 +71,23 @@ module.exports = (client) => {
 				return interaction.reply({ embeds: [config], components: [row], ephemeral: true });
 			}
 			*/
-		let idioma;
+			let idioma;
 
-		if(interaction.locale == 'pt-BR') {
+			if(interaction.locale == 'pt-BR') {
 			 idioma = require('../Structures/lang/pt.json');
 			 }
-		else {
-			idioma = require('../Structures/lang/en.json');
+			else {
+				idioma = require('../Structures/lang/en.json');
 			 }
-		if(!command.ephemeral) {
-			await interaction.deferReply();
-			interaction.reply =	await interaction.editReply;
+			if(!command.ephemeral) {
+				await interaction.deferReply();
+				interaction.reply =	await interaction.editReply;
+			}
+			await command.run(client, interaction, args, idioma);
 		}
-		await command.run(client, interaction, args, idioma);
+		catch {
+			console.log();
+		}
 	});
 //	});
 };
