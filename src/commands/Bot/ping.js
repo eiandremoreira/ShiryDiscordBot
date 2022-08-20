@@ -11,7 +11,7 @@ module.exports = class Command {
 				categoria: 'ℹ️ » Informações',
 				desc: 'Veja o ping atual do BOT.'
 			},
-			aliases: ['latency'],
+			aliases: [],
 			run: this.run
 		};
 	}
